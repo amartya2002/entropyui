@@ -1,3 +1,67 @@
+import { Tab, TabsContent, TabsList, TabsTrigger } from "components/ui/tabs";
+
+import { Tabs } from "nextra/components";
+import {
+  ButtonPrimary,
+  ButtonSizes,
+} from "components/library/cardVariants.tsx";
+import ButtonPrimaryJSX from "data/buttons/ButtonPrimaryJSX.md";
+import ButtonPrimaryHTML from "data/buttons/ButtonPrimaryHTML.md";
+import ButtonSizesHTML from "data/Buttons/ButtonSizesHTML.md";
+import ButtonSizesJSX from "data/Buttons/ButtonSizesJSX.md";
 
 # Cards
 
+
+
+<p className="text-zinc-400 text-xl font-medium">Primary</p>
+
+<Tab defaultValue="view">
+  <TabsList>
+    <TabsTrigger value="view">View</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="view">
+    {" "}
+    <ButtonPrimary />
+  </TabsContent>
+  <TabsContent value="code">
+    {" "}
+    <Tabs items={["HTML", "JSX", "TSX"]}>
+      <Tabs.Tab>
+        <ButtonPrimaryHTML />
+      </Tabs.Tab>
+      <Tabs.Tab>
+        <ButtonPrimaryJSX />
+      </Tabs.Tab>
+      <Tabs.Tab>Not available</Tabs.Tab>
+    </Tabs>
+  </TabsContent>
+</Tab>
+
+---
+    <p className='text-zinc-400 text-xl font-medium'>Sizes</p>
+    {/* ## Sizes */}
+
+<Tab defaultValue="view">
+  <TabsList>
+    <TabsTrigger value="view">View</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="view">
+    {" "}
+    <ButtonSizes />
+  </TabsContent>
+  <TabsContent value="code">
+    {" "}
+    <Tabs items={["HTML", "JSX", "TSX"]}>
+      <Tabs.Tab>
+        <ButtonSizesHTML />
+      </Tabs.Tab>
+      <Tabs.Tab>
+        <ButtonSizesJSX />
+      </Tabs.Tab>
+      <Tabs.Tab>Not available</Tabs.Tab>
+    </Tabs>
+  </TabsContent>
+</Tab>

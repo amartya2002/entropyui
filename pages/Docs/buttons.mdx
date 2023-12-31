@@ -1,58 +1,80 @@
-import { ViewCodeTabs, ViewCodeTab } from 'components/ui/TabsV1';
-import { Tabs } from 'nextra/components'
-import {ButtonPrimary, ButtonSizes} from 'components/library/buttonVariants.tsx'
-import ButtonPrimaryJSX from 'data/buttons/ButtonPrimaryJSX.md'
-import ButtonPrimaryHTML from 'data/buttons/ButtonPrimaryHTML.md'
-import ButtonSizesHTML from "data/Buttons/ButtonSizesHTML.md"
-import ButtonSizesJSX from "data/Buttons/ButtonSizesJSX.md"
-import { SlEye } from "react-icons/sl";
-import { HiOutlineCodeBracket } from "react-icons/hi2";
+import { Tab, TabsContent, TabsList, TabsTrigger } from "components/ui/tabs";
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "components/ui/resizable";
+import { Tabs } from "nextra/components";
+import {
+  ButtonPrimary,
+  ButtonSizes,
+} from "components/library/buttonVariants.tsx";
+import ButtonPrimaryJSX from "data/buttons/ButtonPrimaryJSX.md";
+import ButtonPrimaryHTML from "data/buttons/ButtonPrimaryHTML.md";
+import ButtonSizesHTML from "data/Buttons/ButtonSizesHTML.md";
+import ButtonSizesJSX from "data/Buttons/ButtonSizesJSX.md";
 
 # Buttons
 
-    <p className='text-gxl my-4 text-gray-500 font-medium'>Primary</p>
+    <p className='text-zinc-400 text-xl font-medium'>Primary</p>
     {/* ## Primary */}
 
+<Tab defaultValue="view" >
+  <TabsList>
+    <TabsTrigger value="view">View</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
 
-       <ViewCodeTabs>
-             <ViewCodeTab label="View" icon={<SlEye/>}>
-              <ButtonPrimary />
-              </ViewCodeTab>
+<ResizablePanelGroup direction="horizontal">
+    <ResizablePanel></ResizablePanel>
+    <ResizableHandle withHandle />
 
-        <ViewCodeTab label="Code" icon={<HiOutlineCodeBracket/>}>
-                <Tabs items={['HTML', 'JSX', 'TSX']}>
-                  <Tabs.Tab><ButtonPrimaryHTML /></Tabs.Tab>
-                  <Tabs.Tab><ButtonPrimaryJSX /></Tabs.Tab>
-                  <Tabs.Tab>Not available</Tabs.Tab>
-                </Tabs>
-          </ViewCodeTab>
-       </ViewCodeTabs>
+  <ResizablePanel>  <TabsContent value="view">
+    {" "}
+    <ButtonPrimary />
+  </TabsContent>
+  <TabsContent value="code">
+    {" "}
+    <Tabs items={["HTML", "JSX", "TSX"]}>
+      <Tabs.Tab>
+        <ButtonPrimaryHTML />
+      </Tabs.Tab>
+      <Tabs.Tab>
+        <ButtonPrimaryJSX />
+      </Tabs.Tab>
+      <Tabs.Tab>Not available</Tabs.Tab>
+    </Tabs>
+  </TabsContent></ResizablePanel>
+  <ResizableHandle withHandle />
+    <ResizablePanel></ResizablePanel>
+</ResizablePanelGroup>
+
+</Tab>
 
 ---
 
-    <p className='text-xl my-4 text-gray-500 font-medium'>Sizes</p>
+    <p className='text-zinc-400 text-xl font-medium'>Sizes</p>
     {/* ## Sizes */}
 
-
-       <ViewCodeTabs>
-             <ViewCodeTab label="View">
-              <ButtonSizes/>
-              </ViewCodeTab>
-
-        <ViewCodeTab label="Code">
-                <Tabs items={['HTML', 'JSX', 'TSX']}>
-                  <Tabs.Tab><ButtonSizesHTML/></Tabs.Tab>
-                  <Tabs.Tab><ButtonSizesJSX/></Tabs.Tab>
-                  <Tabs.Tab>Not available</Tabs.Tab>
-                </Tabs>
-          </ViewCodeTab>
-       </ViewCodeTabs>
-
----
-
-
-
-
-
-
-
+<Tab defaultValue="view">
+  <TabsList>
+    <TabsTrigger value="view">View</TabsTrigger>
+    <TabsTrigger value="code">Code</TabsTrigger>
+  </TabsList>
+  <TabsContent value="view">
+    {" "}
+    <ButtonSizes />
+  </TabsContent>
+  <TabsContent value="code">
+    {" "}
+    <Tabs items={["HTML", "JSX", "TSX"]}>
+      <Tabs.Tab>
+        <ButtonSizesHTML />
+      </Tabs.Tab>
+      <Tabs.Tab>
+        <ButtonSizesJSX />
+      </Tabs.Tab>
+      <Tabs.Tab>Not available</Tabs.Tab>
+    </Tabs>
+  </TabsContent>
+</Tab>

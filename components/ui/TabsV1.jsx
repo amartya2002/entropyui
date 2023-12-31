@@ -53,7 +53,7 @@ const ViewCodeTabs = ({ children }) => {
           ))}
           {/* Sliding overlay effect */}
           <div
-            className=" absolute top-[2.5px] left-[4px]  bg-white/40 dark:bg-[#273048]/40  rounded-md h-8  shadow transition-all duration-300 bordder-t border-orange-400"
+            className="   bg-white/40 dark:bg-[#273048]/40  rounded-md   shadow transition-all duration-300 bordder-t border-orange-400"
             style={overlayStyles}
           ></div>
         </div>
