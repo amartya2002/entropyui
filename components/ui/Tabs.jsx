@@ -28,8 +28,10 @@ const ViewCodeTabs = ({ children }) => {
   return (
     <>
       {/* Container for tabs */}
-      <div className="max-w-[200px] relative p-1 bg-[#fafafa] dark:bg-[#0C111D] rounded-lg
-       ">
+      <div
+        className="max-w-[200px] relative p-1 bg-[#fafafa] dark:bg-[#0C111D] rounded-lg
+       "
+      >
         <div className="flex relative  ">
           {/* Map through each child (tab) */}
           {children.map((child) => (

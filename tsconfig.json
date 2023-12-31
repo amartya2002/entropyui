@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/test.jsx", "components/Tabs.jsx"  ],
+, "pages/test.jsx", "components/ui/Tabs.jsx"  ],
   "exclude": [
     "node_modules"
   ]

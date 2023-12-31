@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import "../styles/globals.css"
+import React, { useEffect, useState } from "react";
+import "../styles/globals.css";
 
-import Splash from '../components/Splash';
+import Splash from "../components/Splash";
 // import type { AppProps } from 'next/app';
 
 export default function MyApp({ Component, pageProps }) {
@@ -18,8 +18,9 @@ export default function MyApp({ Component, pageProps }) {
   }, [isLoading]);
 
   return (
-    <div className='bg  '>
-      {isLoading ? <Splash finishLoading={() => setIsLoading(false)} /> : <Component {...pageProps} />}
+    <div className="bg  ">
+      {/* {isLoading ? <Splash finishLoading={() => setIsLoading(false)} /> : <Component {...pageProps} />} */}
+      <Component {...pageProps} />
     </div>
   );
 }

@@ -1,19 +1,18 @@
 import { useRouter } from "next/router";
-import Logo from "components/Logo";
+import Logo from "components/icons/Logo";
 
 export default {
-
   logo: <Logo />,
 
   project: {
     link: "https://amartya2002.github.io/entropyui/",
   },
 
-  navbar: {
-    extraContent: (
-      <p>hello</p>
-    ),
-  },
+  // navbar: {
+  //   extraContent: (
+  //     <p>hello</p>
+  //   ),
+  // },
 
   head: (
     <>
@@ -39,8 +38,19 @@ export default {
   },
 
   footer: {
-    text: <span>MIT {new Date().getFullYear()} © Entropy UI</span>,
+    // text: <span>MIT {new Date().getFullYear()} © Entropy UI</span>,
+    component:null
   },
+
+  feedback:{
+    content: null
+  },
+  editLink:{
+    text: null
+  },
+  toc:{
+component:null
+  }
 
   // gitTimestamp: true,
 };
