@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import React from 'react';
+
 import 'tailwindcss/tailwind.css'
 const index = () => {
   return (
@@ -21,12 +20,12 @@ const index = () => {
                     </p>
                   </div>
                   <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
-                    <Link href="Docs/introduction" className="items-center justify-center w-full px-4 py-2 text-center text-gray-200 duration-200 bg-black border-2 border-black rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
+                    <a href="Docs/introduction" className="items-center justify-center w-full px-4 py-2 text-center text-gray-200 duration-200 bg-black border-2 border-black rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
                       Go to Docs
-                    </Link>
-                    <Link target='_blank' href="https://nextra.site/" className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600">
+                    </a>
+                    <a target='_blank' href="https://nextra.site/" className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600">
                       Learn more
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

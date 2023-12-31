@@ -18,7 +18,7 @@ export default function MyApp({ Component, pageProps }) {
   }, [isLoading]);
 
   return (
-    <div className="bg  ">
+    <div className="bg">
       {/* {isLoading ? <Splash finishLoading={() => setIsLoading(false)} /> : <Component {...pageProps} />} */}
       <Component {...pageProps} />
     </div>
