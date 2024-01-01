@@ -1,28 +1,23 @@
 {
- 
   "Getting Started": {
     "type": "separator",
     "title": "Getting Started"
   },
 
   "introduction": "Introduction",
-"installation": "Installation",
+  "installation": "Installation",
 
-"Design System": {
-  "type": "separator",
-  "title": "Design System"
-},
+  "Design System": {
+    "type": "separator",
+    "title": "Design System"
+  },
   "figma": "Figma",
 
   "Core Components": {
     "type": "separator",
     "title": "Core Components"
   },
-
-  "buttons":"Buttons",
-  "cards":"Cards"
-    
-  }
-  
-
-  
+  "avatars": "Avatars",
+  "buttons": "Buttons",
+  "cards": "Cards"
+}

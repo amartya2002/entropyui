@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg {
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 1;
+    background-image:  linear-gradient(#f7f9ff 2px, transparent 2px), linear-gradient(90deg, #f7f9ff 2px, transparent 2px), linear-gradient(#fbfbfb 1px, transparent 1px), linear-gradient(90deg, #fbfbfb 1px, #00000000 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.bgDark{
+    opacity: 1;
+    background-image: radial-gradient(#2f1313 0.8px, #00000000 0px);
+    background-size: 10px 10px;
+}
+
+.bgLight{
+    opacity: 1;
+    background-image: radial-gradient(#f92525 0.8px, #00000000 0px);
+    background-size: 10px 10px;
+}

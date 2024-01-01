@@ -1,8 +1,8 @@
 import React from "react";
 
-const ButtonPrimary = () => {
+const CardImageStacked = () => {
   return (
-    <div className="max-w-sm rounded-xl overflow-hidden mx-auto  border">
+    <div className="max-w-sm rounded-xl overflow-hidden mx-auto  border border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900">
       <img
         className="w-full"
         src="https://picsum.photos/id/238/200/100"
@@ -10,7 +10,7 @@ const ButtonPrimary = () => {
       />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-        <p className="text-gray-700 text-base">
+        <p className="text-zinc-500 dark:text-zinc-400 text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
           quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
           nihil.
@@ -30,19 +30,19 @@ const ButtonPrimary = () => {
     </div>
   );
 };
-const ButtonSizes = () => {
+const CardNoImg = () => {
   return (
-    <div className="max-w-sm rounded-xl overflow-hidden mx-auto  border">
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-        <p className="text-gray-700 text-base">
+    <div className="max-w-sm rounded-xl overflow-hidden mx-auto  border border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900 py-8">
+      <div className="px-6 mb-6">
+        <h1 className="font-bold text-xl mb-2">The Coldest Sunset</h1>
+        <p className="text-zinc-500 dark:text-zinc-400 text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
           quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
           nihil.
         </p>
       </div>
-      <div className="px-6 pb-8 pt-2">
-        <button className="rounded-lg  bg-gray-800 px-4 py-2.5 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-gray-900 hover:bg-gray-900 focus:ring focus:ring-gray-200 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-gray-300 duration-200">
+      <div className="px-6 ">
+        <button className="rounded-lg dark:bg-white dark:text-black  bg-gray-800 px-4 py-2.5 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-gray-900 hover:bg-gray-900 focus:ring focus:ring-gray-200 disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-gray-300 duration-200">
           Button text
         </button>
       </div>
@@ -50,4 +50,4 @@ const ButtonSizes = () => {
   );
 };
 
-export { ButtonPrimary, ButtonSizes };
+export { CardImageStacked, CardNoImg };

@@ -28,6 +28,10 @@ export default {
       return {
         titleTemplate: "%s – Entropy UI",
       };
+    } else {
+      return {
+        titleTemplate: "Entropy UI - Component Library",
+      };
     }
   },
 
@@ -39,18 +43,18 @@ export default {
 
   footer: {
     // text: <span>MIT {new Date().getFullYear()} © Entropy UI</span>,
-    component:null
+    component: null,
   },
 
-  feedback:{
-    content: null
+  feedback: {
+    content: null,
   },
-  editLink:{
-    text: null
+  editLink: {
+    text: null,
   },
-  toc:{
-component:null
-  }
+  toc: {
+    component: null,
+  },
 
-  // gitTimestamp: true,
+  gitTimestamp: null,
 };

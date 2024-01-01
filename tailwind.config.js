@@ -2,13 +2,14 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx,mdx}',
+    './pages/**/*.{ts,tsx,mdx,jsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
   prefix: "",
   theme: {
+
     container: {
       center: true,
       padding: "2rem",
@@ -33,5 +34,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require('tailwindcss-bg-patterns')],
 }

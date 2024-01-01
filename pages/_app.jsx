@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/globals.css";
+import 'tailwindcss/tailwind.css'
+
 
 import Splash from "../components/Splash";
 // import type { AppProps } from 'next/app';
@@ -18,7 +20,7 @@ export default function MyApp({ Component, pageProps }) {
   }, [isLoading]);
 
   return (
-    <div className="bg">
+    <div className="">
       {/* {isLoading ? <Splash finishLoading={() => setIsLoading(false)} /> : <Component {...pageProps} />} */}
       <Component {...pageProps} />
     </div>

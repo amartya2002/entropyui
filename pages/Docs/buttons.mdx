@@ -1,17 +1,15 @@
-import { Tab, TabsContent, TabsList, TabsTrigger } from "components/ui/tabs";
-import { Tabs } from "nextra/components";
-import {
-  ButtonPrimary,
-  ButtonSizes,
-} from "components/library/buttonVariants.tsx";
-import ButtonPrimaryJSX from "data/buttons/ButtonPrimaryJSX.mdx";
-import ButtonPrimaryHTML from "data/buttons/ButtonPrimaryHTML.mdx";
-import ButtonSizesHTML from "data/buttons/ButtonSizesHTML.mdx";
-import ButtonSizesJSX from "data/buttons/ButtonSizesJSX.mdx";
+
+import ButtonFirstSection from "components/sections/button/section1"
+import ButtonSecondSection from "components/sections/button/section2"
 
 # Buttons
-    <p className='text-zinc-400 text-xl font-medium'>Primary</p>
-    {/* ## Primary */}
+<ButtonFirstSection title="Primary"/>
+---
+<ButtonSecondSection title="Sizes"/>
+
+
+
+{/* <p className='text-zinc-400 text-xl font-medium'>Primary</p>
 
 <Tab defaultValue="view" >
   <TabsList>
@@ -45,7 +43,7 @@ import ButtonSizesJSX from "data/buttons/ButtonSizesJSX.mdx";
     <p className='text-zinc-400 text-xl font-medium'>Sizes</p>
     {/* ## Sizes */}
 
-<Tab defaultValue="view">
+{/* <Tab defaultValue="view">
   <TabsList>
     <TabsTrigger value="view">View</TabsTrigger>
     <TabsTrigger value="code">Code</TabsTrigger>
@@ -66,4 +64,4 @@ import ButtonSizesJSX from "data/buttons/ButtonSizesJSX.mdx";
       <Tabs.Tab>Not available</Tabs.Tab>
     </Tabs>
   </TabsContent>
-</Tab>
+</Tab>  */}
