@@ -9,12 +9,16 @@ import {
   ButtonPrimary,
   ButtonSizes,
 } from "components/library/buttonVariants.tsx";
-import ButtonPrimaryJSX from "data/buttons/ButtonPrimaryJSX.md";
-import ButtonPrimaryHTML from "data/buttons/ButtonPrimaryHTML.md";
-import ButtonSizesHTML from "data/Buttons/ButtonSizesHTML.md";
-import ButtonSizesJSX from "data/Buttons/ButtonSizesJSX.md";
+import ButtonPrimaryJSX from "data/buttons/ButtonPrimaryJSX.mdx";
+import ButtonPrimaryHTML from "data/buttons/ButtonPrimaryHTML.mdx";
+import ButtonSizesHTML from "data/buttons/ButtonSizesHTML.mdx";
+import ButtonSizesJSX from "data/buttons/ButtonSizesJSX.mdx";
 
 # Buttons
+
+{/* <FirstSection title="Primary"/>
+
+<SecondSection title="Sizes" />  */}
 
     <p className='text-zinc-400 text-xl font-medium'>Primary</p>
     {/* ## Primary */}
@@ -25,29 +29,23 @@ import ButtonSizesJSX from "data/Buttons/ButtonSizesJSX.md";
     <TabsTrigger value="code">Code</TabsTrigger>
   </TabsList>
 
-<ResizablePanelGroup direction="horizontal">
-    <ResizablePanel></ResizablePanel>
-    <ResizableHandle withHandle />
-
-  <ResizablePanel>  <TabsContent value="view">
-    {" "}
-    <ButtonPrimary />
-  </TabsContent>
-  <TabsContent value="code">
-    {" "}
-    <Tabs items={["HTML", "JSX", "TSX"]}>
-      <Tabs.Tab>
-        <ButtonPrimaryHTML />
-      </Tabs.Tab>
-      <Tabs.Tab>
-        <ButtonPrimaryJSX />
-      </Tabs.Tab>
-      <Tabs.Tab>Not available</Tabs.Tab>
-    </Tabs>
-  </TabsContent></ResizablePanel>
-  <ResizableHandle withHandle />
-    <ResizablePanel></ResizablePanel>
-</ResizablePanelGroup>
+{" "}
+<TabsContent value="view">
+  {" "}
+  <ButtonPrimary />
+</TabsContent>
+<TabsContent value="code">
+  {" "}
+  <Tabs items={["HTML", "JSX", "TSX"]}>
+    <Tabs.Tab>
+      <ButtonPrimaryHTML />
+    </Tabs.Tab>
+    <Tabs.Tab>
+      <ButtonPrimaryJSX />
+    </Tabs.Tab>
+    <Tabs.Tab>Not available</Tabs.Tab>
+  </Tabs>
+</TabsContent>
 
 </Tab>
 
