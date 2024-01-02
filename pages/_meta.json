@@ -5,7 +5,7 @@
     "display": "hidden",
 
     "theme": {
-      "layout": "full",
+      "layout": "raw",
       "breadcrumb": false,
       "sidebar": false,
       "toc": false,
