@@ -1,14 +1,13 @@
 import React from "react";
-import { Bleed } from 'nextra-theme-docs'
 import { Tab, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
 import { Tabs } from "nextra/components";
 
 export default function view({ title, renderComponent, htmlCode, jsxCode }) {
   return (
-    <>
+    <div className="">
 
       <Tab defaultValue="view">
-        <div className="flex items-center justify-between">
+        <div className="flx items-center justify-between ">
           <p className="text-zinc-400 text-xl font-medium">{title}</p>
 
           <div>
@@ -28,6 +27,6 @@ export default function view({ title, renderComponent, htmlCode, jsxCode }) {
           </Tabs>
         </TabsContent>
       </Tab>
-    </>
+      </div>
   );
 }

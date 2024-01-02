@@ -18,6 +18,7 @@ module.exports = {
       },
     },
     extend: {
+
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

@@ -20,7 +20,7 @@ export default function MyApp({ Component, pageProps }) {
   }, [isLoading]);
 
   return (
-    <div className="">
+    <div className="bgLight dark:bgDark">
       {/* {isLoading ? <Splash finishLoading={() => setIsLoading(false)} /> : <Component {...pageProps} />} */}
       <Component {...pageProps} />
     </div>
